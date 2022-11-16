@@ -5,24 +5,26 @@
 // This program finds the greatest of three numbers
 
 #include <iostream>
+using namespace std;
 
 int main() {
-    float n1, n2, n3;
+    int num1, num2, num3;
 
     // input
-    std::cout << "Enter first number: " << std::endl;
-    std::cout << "Enter second number: " << std::endl;
-    std::cout << "Enter third number: " << std::endl;
+    std::cout << " Enter value for first number:";
+    std::cin >> num1;
+    std::cout << " Enter value for second number:";
+    std::cin >> num2;
+    std::cout << " Enter value for third number:";
+    std::cin >> num3;
 
-    // process and output
-    if (n1 >= n2 && n1 >= n3)
-        std::cout << "Largest number: " << n1;
-
-    if (n2 >= n1 && n2 >= n3)
-        std::cout << "Largest number: " << n2;
-
-    if (n3 >= n1 && n3 >= n2)
-        std::cout << "Largest number: " << n3;
-
-    std::cout << "\n\nDone.\n";
+    // process and out put
+    if (num1 > num2 && num1 > num3) {
+        std::cout << " First number is greatest:" << std::endl;
+    } else if (num2 > num1 && num2 > num3) {
+        std::cout << " Second number is greatest" << std::endl;
+    } else {
+        std::cout << " Third number is greatest" << std::endl;
+    }
+    std::cout << ("\nDone.") << std::endl;
 }
